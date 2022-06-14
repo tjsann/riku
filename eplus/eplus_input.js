@@ -3,7 +3,7 @@
 //性別選択
 var sex = "otoko";　//otoko,onna
 //使用ドメイン入力
-var domains = ['icioucl.com'];
+var domains = ['@icioucl.com'];
 //発券店舗
 var shop = "famima";　//famima,seven
 
