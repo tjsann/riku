@@ -26,19 +26,19 @@ if(mailtype == 0){
 }else{
   mail = address_rand;
 }
-// IPアドレス取得
-function getip(){
-const API_URL = 'https://api.ipify.org/?format=json';
-const res =  fetch(API_URL);
-const data =  res.json();
-ip = data.ip
-return ip;
-}
+// // IPアドレス取得
+// function getip(){
+// const API_URL = 'https://api.ipify.org/?format=json';
+// const res =  fetch(API_URL);
+// const data =  res.json();
+// ip = data.ip
+// return ip;
+// }
 
-getip();
+// getip();
 
-//IPセッション格納
-sessionStorage.setItem("ip", ip);
+// //IPセッション格納
+// sessionStorage.setItem("ip", ip);
 
 //メアドセッション格納
 sessionStorage.setItem("mail", mail)
