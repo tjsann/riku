@@ -37,7 +37,7 @@ return ip;
 }
 
 //ip取得完了後入力等実施
-getip() 
+getip();
 
 setTimeout(() => {
   //IPセッション格納
