@@ -57,4 +57,4 @@ sessionStorage.setItem("tell", tell);
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
 
 //次ページへ
-document.querySelector("[name=NEXT]").click();
+// document.querySelector("[name=NEXT]").click();
