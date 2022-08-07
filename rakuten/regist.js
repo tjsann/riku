@@ -146,4 +146,4 @@ return ip;
   console.log(pass);
 
   //次ページへ
- document.getElementsByName("execMethod")[１].click();
+ document.getElementsByName("execMethod")[0].click();
