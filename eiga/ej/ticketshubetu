@@ -1,0 +1,3 @@
+document.querySelector("#contents > app-purchase-cinema-ticket > div > div.container.px-0 > div > div.col-lg-8 > div:nth-child(1) > ul > li:nth-child(1) > div > div > div.col-md-9.col-12 > button").click();
+document.querySelector("body > modal-container > div.modal-dialog.modal-dialog-centered.modal-lg > div > app-purchase-seat-ticket-modal > app-purchase-seat-ticket-payment-method > div.py-4.scroll-vertical > div > div > div:nth-child(1) > button").click()
+document.querySelector("body > modal-container > div.modal-dialog.modal-dialog-centered.modal-lg > div > app-purchase-seat-ticket-modal > app-purchase-seat-ticket-payment-method > div.bg-light-gray.py-3.border-top > div > div > div > button").click()
