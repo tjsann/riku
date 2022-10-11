@@ -1,4 +1,6 @@
 
+//座席選択モード
+document.querySelector("#contents > app-purchase-cinema-seat > div > div:nth-child(1) > div > div > div.col-lg-8 > app-screen > div.position-relative.bg-white > div > div.screen-scroll > div > div:nth-child(2)").click();
 
 //空席の場合選択
 if(document.getElementsByClassName("default seat-A-11").length !=0){
