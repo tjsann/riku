@@ -1,7 +1,7 @@
 //ローチケメアド電話番号自動入力[共用]
 
 //使用ドメイン入力
-var domains = ['@gamuil.com','@lcioub.com'];
+var domains = ['@lcioub.com'];
 
 //FC番号生成
 var fcno = (Math.floor(Math.random() * 3000) + 1).toString().padStart( 6, '0');
