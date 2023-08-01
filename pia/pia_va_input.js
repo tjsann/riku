@@ -81,20 +81,20 @@ getip().then(() => {
 　sessionStorage.setItem("fcno", fcno)
 
   //FC番号入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(2) > dd:nth-child(2) > p > input[type=text]").value = fcno;
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(2) > dd:nth-child(3) > p:nth-child(2) > input[type=text]").value = fcno;
+  //document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(2) > dd:nth-child(2) > p > input[type=text]").value = fcno;
+  //document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(2) > dd:nth-child(3) > p:nth-child(2) > input[type=text]").value = fcno;
 
   //名前セッション格納
 
   //名前(姓)入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(3) > dd:nth-child(2) > input[type=text]:nth-child(3)").value = sei;
+  document.forms[0].elements[0].value  = sei;
   //名前(名)入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(3) > dd:nth-child(2) > input[type=text]:nth-child(4)").value = mei;　
+  document.forms[0].elements[1].value = mei
   //名前(姓カナ)入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(3) > dd:nth-child(3) > input[type=text]:nth-child(3)").value =sei_kana;
+  document.forms[0].elements[2].value = sei_kana;
   //名前(名カナ)入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(3) > dd:nth-child(3) > input[type=text]:nth-child(4)").value = mei_kana;
-  
+  document.forms[0].elements[3].value = mei_kana;
+
   // 電話番号取得
   var tell1 = "0" + (Math.floor(Math.random()*3)+7) + "0";
   var tell2 = Math.floor(Math.random() * 10000);
@@ -105,21 +105,21 @@ getip().then(() => {
   sessionStorage.setItem("tell", tell);
 
   //電話番号入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(4) > dd > p > input[type=text]:nth-child(1)").value = tell1;
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(4) > dd > p > input[type=text]:nth-child(2)").value = tell2;
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(4) > dd > p > input[type=text]:nth-child(3)").value = tell3;
-  
+  document.forms[0].elements[4].value = tell1;
+  document.forms[0].elements[5].value = tell2;
+  document.forms[0].elements[6].value = tell3;
+
   //メアドセッション格納
   sessionStorage.setItem("mail", mail)
 
   //メアド入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(5) > dd:nth-child(2) > p:nth-child(4) > input[type=text]").value = mail;
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(5) > dd:nth-child(3) > p:nth-child(2) > input[type=text]").value = mail;
+  document.forms[0].elements[7].value = mail;
+  document.forms[0].elements[8].value = mail;
 
   //パスワードセッション格納
   
   //パスワード入力
-  document.querySelector("#wrap > form > section:nth-child(1) > div > div.contents_body.lightpink_back > dl:nth-child(6) > dd > p:nth-child(2) > input[type=text]").value = pass;
+  document.forms[0].elements[9].value = pass;
   
   //次ページへ
   document.querySelector("#wrap > form > section:nth-child(2) > div:nth-child(2) > input.next").click();
